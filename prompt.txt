@@ -1,0 +1,129 @@
+
+1. there is extra r in the email 
+current email :  enquiry@hgerroadshow.com
+updated email : enquiry@hgeroadshow.com
+
+please update the email everywhere, in every page where it is being used 
+
+
+2. in the section 
+Roadshow Trail
+Cities Unfolded.
+
+there are Images wwwon which text is being render 
+problem  : due to diff colors in the Image the text is not visible  
+solution : add a fade effect as bg to each text there so that the text should be visible 
+
+also , when ever user clicks on perticular city, ( when that city opens via hover or click  ) it should redirect to roadshow and scroll to that perticular 
+city 
+
+
+
+
+3. in the hero section 
+there are cards 
+    a. about us 
+    b. CITIES UNITED
+
+for now they both are 2 diffrent cards I want to merge them into 1 card only
+they should match and blend well 
+add a cta btn in the card that redirects to about page 
+
+
+4. on 
+https://hgeroadshow.com/roadshow page 
+
+under The complete calendar.
+remove a discom col 
+
+
+5. in the footer , 
+rename 
+navigation to quick links 
+add something more in company links 
+so it contain 4 links 
+
+6. Target Audience
+remove the view more button 
+remove the learn more from all the cards 
+
+
+also the section is divided into 2 parts
+    a. Institutional buyers with budgets, not browsers.
+We've designed HGER to attract decision-makers from high-impact institutional segments who are ready to invest in Haryana's green transition.
+      and Image and 
+
+    b. cards 
+
+    they sort of look saprate 
+    i want you to make them blend well , make them look like a single component
+    
+    soluitions 
+    a. add them in the parent div 
+
+
+7.under 
+The HGER Summit & Awards Night.
+this section there is line that saprate 2 parts 
+remove that line and reduce the gap 
+
+also at the end of this section add this line  with proper styling 
+
+Each visitor award winner receives
+
+**₹1,00,000 Cash Prize**
+
+Winners announced at grand finale summit,
+
+**Chandigarh**
+
+also add a button that redirects to summit 
+
+8. A limited circle of partners.
+in the section redirect button to  https://hgeroadshow.com/sponsors
+
+
+9.Sponsorship Tiers
+Three tiers. Twenty seats. One unforgettable journey.
+
+major change 
+
+make sure there is same section of this page is in https://hgeroadshow.com/sponsors
+so changes should reflect there also 
+
+a. remove the Saarthi card completely
+
+b. current text flow 
+
+Tier III · Associate (Small)
+Hamsafar ( big )
+12 slots available ( small )
+
+updated 
+
+Tier III · Associate (big)
+Hamsafar ( remove )
+12 slots available ( same )
+
+
+make the availlble slot in Tier III · Associate  19 
+
+the enquire now button should redirect to https://hgeroadshow.com/sponsors
+
+10. comment out the 
+Audience Demographics
+Buyers with budgets, not browsers.
+8 core visitor segments. Every attendee carrying procurement budgets, residential subsidies, agricultural needs, or commercial intent.
+section on 
+https://hgeroadshow.com/sponsors
+
+
+
+11. 
+
+http://hgeroadshow.com/summit
+on this page please add the Image 
+same Image used in home page summit section 
+
+
+
