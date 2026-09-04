@@ -31,3 +31,30 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+/* Sponsor logo marquee — see components/SponsorMarquee.tsx */
+.marquee {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+}
+
+.marquee-track {
+  animation: hger-marquee-scroll 32s linear infinite;
+  will-change: transform;
+}
+
+/* Let people stop the strip to read a logo */
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes hger-marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}

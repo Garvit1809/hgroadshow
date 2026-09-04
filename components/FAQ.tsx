@@ -34,7 +34,7 @@ export default function FAQ() {
   ];
 
   return (
-    <section id="faq" className="py-16 md:py-24 max-w-[1400px] mx-auto w-full px-4 md:px-0 bg-transparent scroll-mt-28">
+    <section id="faq" className="py-16 md:py-24 max-w-[1400px] mx-auto w-full px-4 md:px-0 bg-transparent scroll-mt-52 sm:scroll-mt-40 md:scroll-mt-44">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
 
         {/* Left Column: CTA Card */}

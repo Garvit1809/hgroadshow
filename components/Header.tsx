@@ -44,30 +44,17 @@ export default function Header() {
     <div className="fixed top-0 left-0 right-0 z-50 flex justify-center w-full pt-0 px-0">
       <header className="w-full flex flex-col relative max-w-full rounded-none border-b border-[#e5eae6]/85 bg-white/95 backdrop-blur-md py-3 px-2 md:px-12 shadow-[0_10px_30px_rgba(26,60,40,0.06)]">
         {/* Inner container to keep elements aligned to standard page width */}
-        <div className="flex items-center justify-between w-full max-w-7xl mx-auto">
-          {/* Logos Container */}
-          <div className="flex items-center shrink-0 gap-3 md:gap-5">
-            {/* New HGER Logo */}
-            <Link href="/" className="flex items-center group">
-              <img
-                src="/logo-png.png"
-                alt="HGER Logo"
-                className="h-10 md:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
-              />
-            </Link>
-
-            {/* Vertical Divider */}
-            <div className="block h-12 w-[1px] bg-gray-300"></div>
-
-            {/* Supported By Logo */}
-            <div className="flex flex-col items-center justify-center">
-              <img
-                src="/haryana-energy-depart.png"
-                alt="Government of Haryana Energy Department"
-                className="h-10 md:h-18 w-auto object-contain"
-              />
-            </div>
-          </div>
+        <div className="flex flex-col gap-2 md:gap-3 w-full max-w-7xl mx-auto">
+        {/* Row 1 — brand, navigation, actions */}
+        <div className="flex items-center justify-between w-full gap-4">
+          {/* New HGER Logo */}
+          <Link href="/" className="flex items-center group shrink-0">
+            <img
+              src="/logo-png.png"
+              alt="HGER Logo"
+              className="h-11 md:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300"
+            />
+          </Link>
 
           {/* Desktop Nav - 7 original links */}
           <nav className="hidden lg:flex items-center space-x-5 xl:space-x-7 text-[11px] font-manrope font-extrabold text-[#0c2415] tracking-wider uppercase relative">
@@ -149,6 +136,55 @@ export default function Header() {
               className="w-4 h-0.5 bg-current rounded-full transition-all"
             />
           </button>
+        </div>
+
+        {/* Row 2 — endorsement strip. On mobile the two government lockups share
+            a centred line and "Presented By" gets its own centred line beneath;
+            from md up all three sit inline, left-aligned. */}
+        <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-3 md:gap-x-5 border-t border-[#e5eae6]/70 pt-3">
+          {/* Government lockups stay paired so they never split across lines */}
+          <div className="flex items-center justify-center gap-4 md:gap-5">
+            {/* Supported By — label is baked into the artwork */}
+            <img
+              src="/haryana-energy-depart.png"
+              alt="Supported By Government of Haryana Energy & Transport Department"
+              className="h-11 md:h-14 w-auto object-contain"
+            />
+
+            <span className="h-9 md:h-12 w-[1px] bg-gray-300 shrink-0"></span>
+
+            {/* Associated With — label is baked into the artwork. Sized a touch
+                shorter than the Haryana mark so both wordmarks read the same
+                size: this artwork sets its type larger relative to its canvas. */}
+            <img
+              src={encodeURI("/assets/department of industries.png")}
+              alt="Associated With Department of Industries & Commerce, Haryana"
+              className="h-10 md:h-12 w-auto object-contain"
+            />
+          </div>
+
+          <span className="hidden md:block h-9 md:h-12 w-[1px] bg-gray-300 shrink-0"></span>
+
+          {/* Presented By — label stacked above the mark, mirroring the
+              "Supported By" / "Associated With" lockups baked into the other two.
+              Full width on mobile so it centres on its own line. */}
+          <div className="w-full md:w-auto flex justify-center">
+            <div className="flex flex-col items-center justify-center gap-1 md:gap-1.5">
+              <div className="flex items-center justify-center gap-1.5 md:gap-2">
+                <span className="h-[1px] w-4 md:w-6 bg-[#1a1a1a]/80 shrink-0"></span>
+                <span className="text-[9px] md:text-[11px] leading-none text-[#1a1a1a] font-semibold whitespace-nowrap">
+                  Presented By
+                </span>
+                <span className="h-[1px] w-4 md:w-6 bg-[#1a1a1a]/80 shrink-0"></span>
+              </div>
+              <img
+                src="/assets/vikram_solar.png"
+                alt="Vikram Solar"
+                className="h-9 md:h-11 w-auto object-contain"
+              />
+            </div>
+          </div>
+        </div>
         </div>
 
         {/* Mobile Expandable Menu */}

@@ -122,7 +122,7 @@ export default function RootLayout({
     >
       <body className="min-h-screen flex flex-col font-sans selection:bg-[#1a8a5e]/20 bg-[#f0f7f4] overflow-x-hidden">
         <Header />
-        <main className="flex-grow pt-28 md:pt-32">
+        <main className="flex-grow pt-52 sm:pt-40 md:pt-44">
           {children}
         </main>
         <Footer />

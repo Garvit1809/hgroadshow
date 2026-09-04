@@ -365,7 +365,7 @@ export default function ContactPage() {
       </section>
 
       {/* Accordion FAQ Area */}
-      <section id="faq" className="space-y-10 md:space-y-14 scroll-mt-28">
+      <section id="faq" className="space-y-10 md:space-y-14 scroll-mt-52 sm:scroll-mt-40 md:scroll-mt-44">
         <div className="text-center space-y-2">
           <span className="text-[#1a8a5e] font-mono text-md tracking-[0.3em] uppercase font-bold">Frequently Asked Questions</span>
           <h2 className="text-3xl md:text-5xl font-sans font-bold text-[#0a1f1c] uppercase tracking-tight">Quick answers to common questions.</h2>

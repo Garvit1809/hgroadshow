@@ -232,10 +232,8 @@ export default function SponsorsPage() {
                   className="w-full bg-[#f0f7f4] border-none rounded-xl p-3.5 text-sm font-medium text-[#0a1f1c] focus:ring-2 focus:ring-[#1a8a5e] transition-all appearance-none cursor-pointer"
                 >
                   <option value="">Pick a Tier</option>
-                  <option>Pradhaan — Title Sponsor (1 slot)</option>
-                  <option>Saarthi — Co-Title (7 slots)</option>
-                  <option>Hamsafar — Associate (12 slots)</option>
-                  <option>Open to discussion</option>
+                  <option>Title Sponsor (1 slot)</option>
+                  <option>Associate (12 slots)</option>
                 </select>
                 <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
                   <svg className="w-5 h-5 text-[#1a8a5e]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
@@ -286,7 +284,7 @@ export default function SponsorsPage() {
             <div className="flex flex-col sm:flex-row justify-between items-start mb-10 md:mb-14 gap-4">
               <div>
                 <span className="text-[8px] font-black tracking-[0.3em] text-[#2cc985]/50 uppercase block mb-3">Live Booking Map · First-Come Basis</span>
-                <h3 className="text-2xl md:text-4xl font-sans font-bold text-white">Only <span className="text-[#2cc985] italic font-light">6 slots</span> remain.</h3>
+                <h3 className="text-2xl md:text-4xl font-sans font-bold text-white">Only <span className="text-[#2cc985] italic font-light">3 slots</span> remain.</h3>
                 <p className="text-white/40 text-md max-w-xs font-medium mt-2">
                   Every sponsor commits across all 10 cities — no city-by-city participation.
                 </p>
@@ -299,7 +297,7 @@ export default function SponsorsPage() {
             <div className="grid grid-cols-4 sm:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
               {Array.from({ length: 20 }).map((_, i) => {
                 const total = 20;
-                const filledCount = 14;
+                const filledCount = 17;
                 const discussionCount = 0;
                 const isFilled = i < filledCount;
                 const isDiscussion = i >= filledCount && i < filledCount + discussionCount;

@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import SponsorMarquee from '@/components/SponsorMarquee';
 
 interface HeroProps {
   index: number;
@@ -27,7 +28,7 @@ export default function Hero({ index, words }: HeroProps) {
   };
 
   return (
-    <section className="relative w-full h-screen min-h-[800px] flex items-end pb-24 md:pb-32 -mt-28 md:-mt-32 overflow-hidden">
+    <section className="relative w-full h-screen min-h-[800px] flex items-end pb-24 md:pb-32 -mt-52 sm:-mt-40 md:-mt-44 overflow-hidden">
       {/* Full-bleed Background Video */}
       <div className="absolute inset-0 w-full h-full -z-10 bg-black">
         <video
@@ -99,6 +100,11 @@ export default function Hero({ index, words }: HeroProps) {
             <Link href="/about" className="px-6 py-3 sm:px-8 sm:py-4 bg-transparent hover:bg-white/10 text-white font-bold rounded-full border border-white/30 hover:border-white transition-all text-xs sm:text-sm uppercase tracking-widest backdrop-blur-sm">
               Discover More
             </Link>
+          </motion.div>
+
+          {/* Sponsor Logo Marquee */}
+          <motion.div variants={itemVariants} className="w-full pt-6 sm:pt-8">
+            <SponsorMarquee />
           </motion.div>
         </motion.div>
       </div>

@@ -123,7 +123,7 @@ export default function RoadshowPage() {
             <div
               key={i}
               id={city.name.toLowerCase()}
-              className="bg-white rounded-[32px] p-8 md:p-10 border border-[#1a8a5e]/10 group hover:bg-[#0a1f1c] transition-all duration-500 shadow-sm hover:shadow-xl scroll-mt-28"
+              className="bg-white rounded-[32px] p-8 md:p-10 border border-[#1a8a5e]/10 group hover:bg-[#0a1f1c] transition-all duration-500 shadow-sm hover:shadow-xl scroll-mt-52 sm:scroll-mt-40 md:scroll-mt-44"
             >
               <div className="flex justify-between items-start mb-6">
                 <span className="text-[#1a8a5e] font-mono text-lg font-light italic">/{city.num}</span>

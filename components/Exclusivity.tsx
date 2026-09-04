@@ -71,7 +71,7 @@ export default function Exclusivity() {
               <div className="flex flex-col sm:flex-row justify-between items-start mb-10 md:mb-14 gap-4">
                 <div>
                   <span className="text-[8px] font-black tracking-[0.3em] text-[#2cc985]/50 uppercase block mb-3">Sponsor Slots · Live</span>
-                  <h3 className="text-2xl md:text-4xl font-sans font-bold text-white">6 of 20 open</h3>
+                  <h3 className="text-2xl md:text-4xl font-sans font-bold text-white">3 of 20 open</h3>
                 </div>
                 <div className="bg-[#1a8a5e]/20 border border-[#1a8a5e]/30 px-4 py-1.5 rounded-full">
                   <span className="text-[9px] font-bold text-[#2cc985] tracking-widest uppercase">Live Status</span>
@@ -81,7 +81,7 @@ export default function Exclusivity() {
               <div className="grid grid-cols-4 sm:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
                 {Array.from({ length: 20 }).map((_, i) => {
                   const total = 20;
-                  const filledCount = 14; // adjust as needed
+                  const filledCount = 17; // adjust as needed
                   const discussionCount = 0; // adjust as needed
                   const isFilled = i < filledCount;
                   const isDiscussion = i >= filledCount && i < filledCount + discussionCount;
