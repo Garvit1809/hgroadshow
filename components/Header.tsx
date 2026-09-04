@@ -45,10 +45,15 @@ export default function Header() {
       <header className="w-full flex flex-col relative max-w-full rounded-none border-b border-[#e5eae6]/85 bg-white/95 backdrop-blur-md py-3 px-2 md:px-12 shadow-[0_10px_30px_rgba(26,60,40,0.06)]">
         {/* Inner container to keep elements aligned to standard page width */}
         <div className="flex flex-col gap-2 md:gap-3 w-full max-w-7xl mx-auto">
-        {/* Row 1 — brand, navigation, actions */}
-        <div className="flex items-center justify-between w-full gap-4">
+        {/* Row 1 — brand, navigation, actions. Below lg the logo is centred in
+            the row with the hamburger pinned right; from lg up (once the nav
+            appears) it returns to normal flow on the left. */}
+        <div className="relative flex items-center justify-end lg:justify-between w-full gap-4 min-h-11 lg:min-h-0">
           {/* New HGER Logo */}
-          <Link href="/" className="flex items-center group shrink-0">
+          <Link
+            href="/"
+            className="absolute left-1/2 -translate-x-1/2 lg:static lg:translate-x-0 flex items-center group shrink-0"
+          >
             <img
               src="/logo-png.png"
               alt="HGER Logo"
@@ -138,12 +143,15 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Row 2 — endorsement strip. On mobile the two government lockups share
-            a centred line and "Presented By" gets its own centred line beneath;
-            from md up all three sit inline, left-aligned. */}
-        <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-3 md:gap-x-5 border-t border-[#e5eae6]/70 pt-3">
-          {/* Government lockups stay paired so they never split across lines */}
-          <div className="flex items-center justify-center gap-4 md:gap-5">
+        {/* Row 2 — endorsement strip. Mobile: government pair on a centred line,
+            "Presented By" centred beneath. md: all three inline, left-aligned.
+            lg (once the nav appears): "Presented By" sits left under the logo and
+            the government pair is centred across the row, under the nav links. */}
+        <div className="relative flex flex-wrap items-center justify-center md:justify-start gap-x-4 gap-y-3 md:gap-x-5 border-t border-[#e5eae6]/70 pt-3">
+          {/* Government lockups stay paired so they never split across lines.
+              Taken out of flow at lg so they centre on the row, not on the
+              space left over beside "Presented By". */}
+          <div className="flex items-center justify-center gap-4 md:gap-5 lg:absolute lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">
             {/* Supported By — label is baked into the artwork */}
             <img
               src="/haryana-energy-depart.png"
@@ -163,7 +171,7 @@ export default function Header() {
             />
           </div>
 
-          <span className="hidden md:block h-9 md:h-12 w-[1px] bg-gray-300 shrink-0"></span>
+          <span className="hidden md:block lg:hidden h-9 md:h-12 w-[1px] bg-gray-300 shrink-0"></span>
 
           {/* Presented By — label stacked above the mark, mirroring the
               "Supported By" / "Associated With" lockups baked into the other two.

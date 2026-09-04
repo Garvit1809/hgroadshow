@@ -28,7 +28,7 @@ export default function Hero({ index, words }: HeroProps) {
   };
 
   return (
-    <section className="relative w-full h-screen min-h-[800px] flex items-end pb-24 md:pb-32 -mt-52 sm:-mt-40 md:-mt-44 overflow-hidden">
+    <section className="relative w-full h-screen min-h-[800px] flex items-end pb-24 md:pb-32 lg:pb-16 -mt-52 sm:-mt-40 md:-mt-44 overflow-hidden">
       {/* Full-bleed Background Video */}
       <div className="absolute inset-0 w-full h-full -z-10 bg-black">
         <video
@@ -53,7 +53,7 @@ export default function Hero({ index, words }: HeroProps) {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="w-full max-w-4xl flex flex-col items-start gap-5 pt-32"
+          className="w-full max-w-4xl flex flex-col items-start gap-5 pt-56 sm:pt-44 md:pt-48"
         >
           {/* Date Tag */}
           <motion.div variants={itemVariants} className="flex items-center gap-4">
