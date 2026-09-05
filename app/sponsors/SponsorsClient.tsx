@@ -232,8 +232,8 @@ export default function SponsorsPage() {
                   className="w-full bg-[#f0f7f4] border-none rounded-xl p-3.5 text-sm font-medium text-[#0a1f1c] focus:ring-2 focus:ring-[#1a8a5e] transition-all appearance-none cursor-pointer"
                 >
                   <option value="">Pick a Tier</option>
-                  <option>Title Sponsor (1 slot)</option>
-                  <option>Associate (12 slots)</option>
+                  <option disabled>Title Sponsor (0 remaining)</option>
+                  <option>Associate (3 slots remaining)</option>
                 </select>
                 <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
                   <svg className="w-5 h-5 text-[#1a8a5e]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
