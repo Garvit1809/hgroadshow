@@ -2,7 +2,7 @@
 import React from 'react';
 
 const SPONSORS = [
-  { name: "Gautam Solar", src: "/sponsors/GAUTAM SOLAR.png" },
+  { name: "Gautam Solar", src: "/sponsors/gautam solar.png" },
   { name: "ReNew", src: "/sponsors/RENEW.png" },
   { name: "Evolve", src: "/sponsors/evolve logo.png" },
   { name: "Good Enough", src: "/sponsors/good enough.png" },
