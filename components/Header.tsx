@@ -172,12 +172,22 @@ export default function Header() {
 
             <span className="h-9 md:h-12 w-[1px] bg-gray-300 shrink-0"></span>
 
-            {/* Co-Title Sponsor */}
-            <img
-              src={encodeURI("/assets/apl logo.png")}
-              alt="Co-Title Sponsor APL"
-              className="h-10 md:h-12 w-auto object-contain"
-            />
+            {/* Co-Title Sponsor — stacked label + logo, matching the layout
+                of the government lockups above */}
+            <div className="flex flex-col items-center justify-center gap-1 md:gap-1.5">
+              <div className="flex items-center justify-center gap-1.5 md:gap-2">
+                <span className="h-[1px] w-4 md:w-6 bg-gray-300 shrink-0"></span>
+                <span className="text-[9px] md:text-[11px] leading-none text-[#1a1a1a] font-semibold whitespace-nowrap">
+                  Co-Title Sponsor
+                </span>
+                <span className="h-[1px] w-4 md:w-6 bg-gray-300 shrink-0"></span>
+              </div>
+              <img
+                src={encodeURI("/assets/apl logo.png")}
+                alt="Co-Title Sponsor APL"
+                className="h-9 md:h-11 w-auto object-contain"
+              />
+            </div>
           </div>
 
           <span className="hidden md:block lg:hidden h-9 md:h-12 w-[1px] bg-gray-300 shrink-0"></span>
