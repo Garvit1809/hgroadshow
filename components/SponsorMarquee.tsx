@@ -10,11 +10,11 @@ const SPONSORS = [
   { name: "INA Solar", src: "/sponsors/ina solar.png" },
   { name: "Voltra", src: "/sponsors/voltra logo .png" },
   { name: "Bolt Earth", src: "/sponsors/boltearth.png" },
-  { name: "Deye", src: encodeURI("/sponsors/deye logo.png") },
-  { name: "Electres", src: encodeURI("/sponsors/electres logo.png") },
+  { name: "Deye", src: "/sponsors/deye_logo.png" },
+  { name: "Electres", src: "/sponsors/electres_logo.png" },
   { name: "Servotec", src: "/sponsors/servotec.png" },
-  { name: "Statiq", src: encodeURI("/sponsors/statiq logo.png") },
-  { name: "WattHut", src: encodeURI("/sponsors/watthut logo.png") },
+  { name: "Statiq", src: "/sponsors/statiq_logo.png" },
+  { name: "WattHut", src: "/sponsors/watthut_logo.png" },
 ];
 
 export default function SponsorMarquee() {
