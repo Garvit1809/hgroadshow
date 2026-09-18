@@ -177,7 +177,7 @@ export default function Header() {
             <div className="flex flex-col items-center justify-center gap-1 md:gap-1.5">
               <div className="flex items-center justify-center gap-1.5 md:gap-2">
                 <span className="h-[1px] w-4 md:w-6 bg-gray-300 shrink-0"></span>
-                <span className="text-[9px] md:text-[11px] leading-none text-[#1a1a1a] font-semibold whitespace-nowrap">
+                <span className="text-[11px] md:text-[13px] leading-none text-[#1a1a1a] font-semibold whitespace-nowrap">
                   Co-Title Sponsor
                 </span>
                 <span className="h-[1px] w-4 md:w-6 bg-gray-300 shrink-0"></span>
