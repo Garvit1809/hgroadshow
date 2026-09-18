@@ -3,12 +3,18 @@ import React from 'react';
 
 const SPONSORS = [
   { name: "Gautam Solar", src: "/sponsors/gautam solar.png" },
-  { name: "ReNew", src: "/sponsors/RENEW.png" },
+  { name: "ReNew", src: "/sponsors/renew logo.png" },
   { name: "Evolve", src: "/sponsors/evolve logo.png" },
   { name: "Good Enough", src: "/sponsors/good enough.png" },
   { name: "Grun", src: "/sponsors/grun logo.png" },
   { name: "INA Solar", src: "/sponsors/ina solar.png" },
   { name: "Voltra", src: "/sponsors/voltra logo .png" },
+  { name: "Bolt Earth", src: "/sponsors/boltearth.png" },
+  { name: "Deye", src: encodeURI("/sponsors/deye logo.png") },
+  { name: "Electres", src: encodeURI("/sponsors/electres logo.png") },
+  { name: "Servotec", src: "/sponsors/servotec.png" },
+  { name: "Statiq", src: encodeURI("/sponsors/statiq logo.png") },
+  { name: "WattHut", src: encodeURI("/sponsors/watthut logo.png") },
 ];
 
 export default function SponsorMarquee() {
