@@ -169,6 +169,15 @@ export default function Header() {
               alt="Associated With Department of Industries & Commerce, Haryana"
               className="h-10 md:h-12 w-auto object-contain"
             />
+
+            <span className="h-9 md:h-12 w-[1px] bg-gray-300 shrink-0"></span>
+
+            {/* Co-Title Sponsor */}
+            <img
+              src={encodeURI("/assets/apl logo.png")}
+              alt="Co-Title Sponsor APL"
+              className="h-10 md:h-12 w-auto object-contain"
+            />
           </div>
 
           <span className="hidden md:block lg:hidden h-9 md:h-12 w-[1px] bg-gray-300 shrink-0"></span>
