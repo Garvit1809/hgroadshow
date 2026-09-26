@@ -15,6 +15,10 @@ const SPONSORS = [
   { name: "Servotec", src: "/sponsors/servotec.png" },
   { name: "Statiq", src: "/sponsors/statiq_logo.png" },
   { name: "WattHut", src: "/sponsors/watthut_logo.png" },
+  { name: "Renewsys", src: "/sponsors/renewsys.png" },
+  { name: "Solaryaan", src: "/sponsors/solaryaan.png" },
+  { name: "Sunora Solar", src: encodeURI("/sponsors/sunora solar.png") },
+  { name: "Tata", src: "/sponsors/tata.png" },
 ];
 
 export default function SponsorMarquee() {
