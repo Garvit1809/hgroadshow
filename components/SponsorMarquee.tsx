@@ -17,7 +17,7 @@ const SPONSORS = [
   { name: "WattHut", src: "/sponsors/watthut_logo.png" },
   { name: "Renewsys", src: "/sponsors/renewsys.png" },
   { name: "Solaryaan", src: "/sponsors/solaryaan.png" },
-  { name: "Sunora Solar", src: encodeURI("/sponsors/sunora solar.png") },
+  { name: "Sunora Solar", src: "/sponsors/sunora_solar.png" },
   { name: "Tata", src: "/sponsors/tata.png" },
 ];
 
