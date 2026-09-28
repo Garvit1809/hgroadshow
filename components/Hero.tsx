@@ -111,7 +111,7 @@ export default function Hero({ index, words }: HeroProps) {
         {/* Next Stop Card - Right Side (Desktop Only) */}
         <motion.div
           variants={itemVariants}
-          className="hidden lg:flex flex-col items-end gap-3 pb-6"
+          className="hidden lg:flex flex-col items-end gap-3 absolute right-8 lg:right-12 xl:right-20 top-1/2 -translate-y-1/2"
         >
           <div className="bg-gradient-to-br from-white to-white/90 backdrop-blur-md rounded-3xl p-8 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] max-w-sm text-right border border-white/20 relative overflow-hidden group hover:shadow-[0_25px_60px_-12px_rgba(26,138,94,0.15)] transition-all duration-300">
             {/* Accent bar on left */}
