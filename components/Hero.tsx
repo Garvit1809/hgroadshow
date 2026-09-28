@@ -53,7 +53,7 @@ export default function Hero({ index, words }: HeroProps) {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="w-full lg:max-w-4xl flex flex-col items-start gap-5 pt-48 sm:pt-36 md:pt-40"
+          className="w-full lg:max-w-4xl flex flex-col items-start gap-5 pt-64 sm:pt-52 md:pt-56"
         >
           {/* Date Tag */}
           <motion.div variants={itemVariants} className="flex items-center gap-4">
