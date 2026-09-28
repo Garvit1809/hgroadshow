@@ -47,13 +47,13 @@ export default function Hero({ index, words }: HeroProps) {
       {/* Decorative ambient glow */}
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#1a8a5e]/20 rounded-full blur-[120px] pointer-events-none translate-y-1/2 -translate-x-1/4"></div>
 
-      <div className="w-full max-w-[1600px] mx-auto px-8 md:px-12 lg:px-20 relative z-10">
+      <div className="w-full max-w-[1600px] mx-auto px-8 md:px-12 lg:px-20 relative z-10 flex flex-col lg:flex-row lg:items-end lg:justify-between">
         {/* Content Container - Pushed to Bottom Left */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="w-full max-w-4xl flex flex-col items-start gap-5 pt-56 sm:pt-44 md:pt-48"
+          className="w-full lg:max-w-4xl flex flex-col items-start gap-5 pt-56 sm:pt-44 md:pt-48"
         >
           {/* Date Tag */}
           <motion.div variants={itemVariants} className="flex items-center gap-4">
@@ -106,6 +106,27 @@ export default function Hero({ index, words }: HeroProps) {
           <motion.div variants={itemVariants} className="w-full pt-6 sm:pt-8">
             <SponsorMarquee />
           </motion.div>
+        </motion.div>
+
+        {/* Next Stop Card - Right Side (Desktop Only) */}
+        <motion.div
+          variants={itemVariants}
+          className="hidden lg:flex flex-col items-end gap-3 pb-6"
+        >
+          <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.2)] max-w-xs text-right">
+            <div className="text-[#6b7280] text-xs font-semibold uppercase tracking-widest mb-2">
+              Next Stop
+            </div>
+            <div className="text-2xl font-bold text-[#0a1f1c] mb-1">
+              Palwal
+            </div>
+            <div className="text-sm text-[#2d4a45] font-medium mb-3">
+              04 Oct, Sunday
+            </div>
+            <div className="text-xs text-[#2d4a45] leading-relaxed">
+              Neta ji Subhash Chandra Bose Stadium, Indoor, Agra chawk Palwal Haryana
+            </div>
+          </div>
         </motion.div>
       </div>
 
