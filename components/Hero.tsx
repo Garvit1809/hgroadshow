@@ -102,6 +102,22 @@ export default function Hero({ index, words }: HeroProps) {
             </Link>
           </motion.div>
 
+          {/* Next Stop Info - Mobile Only (Compact) */}
+          <motion.div variants={itemVariants} className="lg:hidden w-full">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20 mb-6">
+              <div className="flex items-start gap-3">
+                <svg className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <div className="text-white">
+                  <div className="text-sm font-bold">Next Stop: Palwal</div>
+                  <div className="text-xs text-white/70 mt-1">04 Oct, Sunday · Neta ji Subhash Chandra Bose Stadium</div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
           {/* Sponsor Logo Marquee */}
           <motion.div variants={itemVariants} className="w-full pt-6 sm:pt-8">
             <SponsorMarquee />
