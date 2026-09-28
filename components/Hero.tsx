@@ -53,7 +53,7 @@ export default function Hero({ index, words }: HeroProps) {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="w-full lg:max-w-4xl flex flex-col items-start gap-5 pt-56 sm:pt-44 md:pt-48"
+          className="w-full lg:max-w-4xl flex flex-col items-start gap-5 pt-48 sm:pt-36 md:pt-40"
         >
           {/* Date Tag */}
           <motion.div variants={itemVariants} className="flex items-center gap-4">
@@ -129,8 +129,12 @@ export default function Hero({ index, words }: HeroProps) {
                 </svg>
               </div>
               
-              <div className="text-4xl font-black text-[#0a1f1c] mb-2 leading-tight">
+              <div className="text-4xl font-black text-[#0a1f1c] mb-1 leading-tight">
                 Palwal
+              </div>
+              
+              <div className="text-xs font-medium text-emerald-600 mb-4 leading-tight">
+                Haryana Green Energy Roadshow<br />Flag off from Palwal
               </div>
               
               <div className="flex items-center justify-end gap-2 mb-4 text-[#1a8a5e] font-semibold">
