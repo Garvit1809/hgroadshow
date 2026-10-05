@@ -118,23 +118,20 @@ export default function Hero({ index, words }: HeroProps) {
                 </div>
                 
                 <div className="text-2xl font-black text-[#0a1f1c] mb-1">
-                  Palwal
+                  Rewari
                 </div>
                 
                 <div className="text-xs font-semibold text-emerald-600 mb-3 leading-snug">
-                  Haryana Green Energy Roadshow<br />Flag off from Palwal
+                  Haryana Green Energy Roadshow
                 </div>
                 
-                <div className="flex items-center gap-2 mb-3 text-[#1a8a5e] font-semibold text-sm">
+                <div className="flex items-center gap-2 text-[#1a8a5e] font-semibold text-sm">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
-                  04 Oct, Sunday
+                  11 Oct, Sunday
                 </div>
-                
-                <div className="text-xs text-[#2d4a45] leading-snug border-t border-gray-200 pt-3">
-                  Neta ji Subhash Chandra Bose Stadium, Indoor, Agra chawk Palwal Haryana
-                </div>
+
               </div>
             </div>
           </motion.div>
@@ -167,23 +164,20 @@ export default function Hero({ index, words }: HeroProps) {
               </div>
               
               <div className="text-4xl font-black text-[#0a1f1c] mb-1 leading-tight">
-                Palwal
+                Rewari
               </div>
               
               <div className="text-xs font-medium text-emerald-600 mb-4 leading-tight">
-                Haryana Green Energy Roadshow<br />Flag off from Palwal
+                Haryana Green Energy Roadshow
               </div>
               
-              <div className="flex items-center justify-end gap-2 mb-4 text-[#1a8a5e] font-semibold">
+              <div className="flex items-center justify-end gap-2 text-[#1a8a5e] font-semibold">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                04 Oct, Sunday
+                11 Oct, Sunday
               </div>
-              
-              <div className="text-sm text-[#2d4a45] leading-relaxed border-t border-gray-200 pt-4">
-                Neta ji Subhash Chandra Bose Stadium, Indoor, Agra chawk Palwal Haryana
-              </div>
+
             </div>
           </div>
         </motion.div>
