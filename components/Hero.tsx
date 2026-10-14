@@ -118,7 +118,7 @@ export default function Hero({ index, words }: HeroProps) {
                 </div>
                 
                 <div className="text-2xl font-black text-[#0a1f1c] mb-1">
-                  Rewari
+                  Bhiwani
                 </div>
                 
                 <div className="text-xs font-semibold text-emerald-600 mb-3 leading-snug">
@@ -129,7 +129,7 @@ export default function Hero({ index, words }: HeroProps) {
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
-                  11 Oct, Sunday
+                  18 Oct, Sunday
                 </div>
 
               </div>
@@ -164,7 +164,7 @@ export default function Hero({ index, words }: HeroProps) {
               </div>
               
               <div className="text-4xl font-black text-[#0a1f1c] mb-1 leading-tight">
-                Rewari
+                Bhiwani
               </div>
               
               <div className="text-xs font-medium text-emerald-600 mb-4 leading-tight">
@@ -175,7 +175,7 @@ export default function Hero({ index, words }: HeroProps) {
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                11 Oct, Sunday
+                18 Oct, Sunday
               </div>
 
             </div>
